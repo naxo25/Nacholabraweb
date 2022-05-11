@@ -1,0 +1,11 @@
+build
+output
+package.json
+ignore
+readme.md
+
+style/about.css
+style/contact.css
+
+.git
+node_modules

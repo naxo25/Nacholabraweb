@@ -1,0 +1,16 @@
+{
+  "name": "new-pag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor ./ index.html 8080 --reload --browse",
+    "test": "sh build/test.sh",
+    "build": "sh build/build.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}

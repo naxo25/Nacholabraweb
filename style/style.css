@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 :root {
   --github: #61DBFB;
   /*--vue: #41B883;*/
@@ -43,7 +43,8 @@ p {
   align-items: center;
   background: url('../images/fondos/vue.png');
   /*background: black;*/
-  background-size: cover
+  background-size: cover;
+  margin-bottom: 100px;
 }
 .banner .content {
   max-width: 900px;
@@ -101,6 +102,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  /*transition: .2s;*/
 }
 header .logo {
   color: #fff;
@@ -131,10 +133,13 @@ header.sticky {
   /*box-shadow: 1px  rgba(0,0,0,.1);*/
   background: #fff;
   padding: 10px 70px;
+  transition: .5s;
 }
 header.sticky .navigation li a, header.sticky .logo {
+  transition: .5s;
   color: #111
 }
+
 header .navigation li a:hover {
   color: var(--vue);
 }
@@ -142,6 +147,7 @@ header .navigation li a:hover {
 /* About */
 #About {
   padding: 100px;
+  padding-top: 0px;
 }
 .row {
   position: relative;

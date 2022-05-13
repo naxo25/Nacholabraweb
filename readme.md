@@ -19,15 +19,16 @@ yarn build
 ```
 
 ### Herramientas usadas
-
 * VueJs
-* Python
 * https://pagespeed.web.dev/ para métricas de rendimiento.
+* https://web.dev/defer-non-critical-css/ para colas de css criticos.
+
+### Recursos
 * https://imageresizer.com/ para reducir tamaño de imágenes.
+* https://loading.io/css/ logos.
 
 
-### Requisitos 📋
-
+### Requisitos para build 📋
 * Python
 
 

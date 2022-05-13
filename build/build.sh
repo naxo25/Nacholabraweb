@@ -13,3 +13,6 @@ echo $(python build/build.py Jspag/list.js) > $output/Jspag/list.js
 echo $(python build/build.py style/cards.css) > $output/style/cards.css;
 echo $(python build/build.py style/min.css) > $output/style/min.css;
 echo $(python build/build.py style/style.css) > $output/style/style.css;
+echo $(python build/build.py style/loader.css) > $output/style/loader.css;
+
+echo 'Build creada en' $output

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "servor ./ index.html 8080 --reload --browse",
+    "dev": "servor ./ index.html --reload --browse",
     "test": "sh build/test.sh",
     "build": "sh build/build.sh"
   },

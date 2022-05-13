@@ -34,8 +34,8 @@
   background: var(--i);
   /*border-radius: 20px;*/
   overflow: hidden;
-  /*box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, .05);*/
-  border: 1px ridge;
+  box-shadow: var(--shadow);
+  /*border: 1px ridge;*/
 }
 
 .conatainer .serviceBox .imgBox {
@@ -55,7 +55,8 @@
   width: 100%;
   transition-delay: .5s;
   transition: 1s;
-  box-shadow: var(--shadow);
+  /*box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, .05);*/
+  /*box-shadow: var(--shadow);*/
 }
 
 .conatainer .serviceBox:hover .imgBox {

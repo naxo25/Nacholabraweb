@@ -26,6 +26,7 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-display: swap;
 }
 p {
   font-weight: 300;
@@ -41,8 +42,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../images/fondos/vue.png');
-  /*background: black;*/
+  background: grey;
   background-size: cover;
   margin-bottom: 100px;
 }

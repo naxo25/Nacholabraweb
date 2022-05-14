@@ -1,10 +1,10 @@
 
 output='output'
-exclude="echo $(python build/exclude.py)";
-# echo $exclude
+exclude=$(python build/exclude.py);
 
+# build
 rm -rf $output
-rsync -av ./ $exclude $output 
+rsync -a ./ $exclude $output 
 
 echo $(python build/build.py index.html) > $output/index.html
 echo $(python build/build.py Jspag/js.js) > $output/Jspag/js.js

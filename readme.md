@@ -11,17 +11,53 @@ https://nacholabraweb.000webhostapp.com/
 # install dependencies
 yarn
 
-# serve with hot reload at localhost:8080
+# serve with servor hot reload at localhost:8080
 yarn dev
 
-# build for production with minification
+# build for production with python minification
 yarn build
 ```
 
+# Historial
+
+Para poder tener listo lo más rapido posible el DOM realize las siguientes configuraciones.
+
+### Javascript
+
+Archivos pesados se cargan a través de promesas.
+
+	new Promise((resolve, reject) => {
+	  const script = document.createElement('script');
+	  script.src = 'https://vue.global.prod.min.js';
+	  script.onload = resolve;
+	  script.onerror = reject;
+	  document.head.appendChild(script);
+	});
+
+### Colas de css criticos
+
+Uso de preload y prefetch para cargar recursos sin bloquear el dom.
+
+	<link rel="preload" href="./style/min.css" as="style">
+	<link rel="stylesheet" type="text/css" href="./style/cards.css">
+
+https://web.dev/defer-non-critical-css/
+
+### Precarga de imágenes con js
+
+	function preload(image, url) {
+	  fetch(url).then(request => request.blob()).then(() => {
+	    image.src = url;
+	  });
+	}
+
+https://deployando.net/2020/01/21/precargar-imagenes-javascript/
+
+
 ### Herramientas usadas
 * VueJs
+* servor para servidor estático.
 * https://pagespeed.web.dev/ para métricas de rendimiento.
-* https://web.dev/defer-non-critical-css/ para colas de css criticos.
 
 ### Recursos
 * https://imageresizer.com/ para reducir tamaño de imágenes.

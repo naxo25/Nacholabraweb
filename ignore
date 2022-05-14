@@ -8,4 +8,5 @@ style/about.css
 style/contact.css
 
 .git
+.gitignore
 node_modules

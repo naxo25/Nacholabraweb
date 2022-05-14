@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ignacio Labra Web</title>
 
-  <script defer src=./Jspag/list.js></script>
-  <script defer src=./Jspag/js.js></script>
+  <script src=./Jspag/js.js></script>
+  <script async src=./Jspag/list.js></script>
 
-  <link rel="stylesheet" as='style' href="./style/style.css">
-  <link rel="stylesheet" as='style' href="./style/cards.css">
-  <link rel="stylesheet" as='style' href="./style/min.css">
   <link rel="stylesheet" as='style' href="./style/loader.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as='style' href="./style/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as='style' href="./style/cards.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as='style' href="./style/min.css" onload="this.onload=null;this.rel='stylesheet'">
 
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/cards.css">
+    <link rel="stylesheet" type="text/css" href="./style/min.css">
   </noscript>
+
   <meta name="application-name" content="nacholabraweb">
 </head>
 <body>
+  <div class="center loader"><div class="lds-ripple"><div></div><div></div></div></div>
   <div id='app'>
-    <div v-if=!load class="center"><div class="lds-ripple"><div></div><div></div></div></div>
-    <template v-else>
+    <template v-if=load>
       <header>
         <a href="https://nacholabraweb.000webhostapp.com" class="logo">Ignacio Labra Web<span>.</span></a>
         <div class="menuToggle" onclick="toggleMenu()"></div>
@@ -100,19 +104,7 @@
           </div>
         </div>
       </section>
-
     </template>
   </div>
-
-  <script type="text/javascript">
-    const toggleMenu = () => {
-      const a = document.querySelector('.menuToggle');
-      const b = document.querySelector('.navigation');
-      a.classList.toggle('active');
-      b.classList.toggle('active')
-    };
-  </script>
-
-  <script src=Jspag/vue.global.prod.min.js></script>
 </body>
 </html>

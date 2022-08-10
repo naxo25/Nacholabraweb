@@ -1,0 +1,125 @@
+
+@media (max-width: 991px) {
+  header, header.sticky {
+    padding: 10px 20px;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  header .navigation li {
+    margin-left: 0
+  }
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .menuToggle.active {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+  .row .col50 .text p,
+  .row .col50 .imgBox  {
+    width: 80%
+  }
+  /*img box 300 min width*/
+}
+@media (max-width: 500px) {
+  header .logo {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .card {
+    width: 100%
+  }
+  .footer p.frase {
+    width: 60%;
+  }
+  .content h3 {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 350px) {
+  header .logo {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .card {
+    margin: 10px;
+    width: 300px;
+  }
+  .contFlex {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1701px) {
+  section {
+    width: 90%;
+    margin: auto;
+  }
+  .about {
+    margin: 50px auto;
+  }
+  .card {
+    margin: 20px;
+  }
+}
+
+
+@media (min-width: 2201px) {
+  section {
+    width: 70%;
+    margin: auto;
+  }
+  .about {
+    margin: 100px auto;
+  }
+  .card {
+    margin: 50px;
+  }
+}

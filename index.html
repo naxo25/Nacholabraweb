@@ -13,15 +13,14 @@
   <link rel=manifest href=manifest.json>
   <link rel="stylesheet" type="text/css" href="./style/loader.css">
 
-  <link rel="preload" href="./style/cards.css" as="style">
+  <!-- <link rel="preload" href="./style/cards.css" as="style"> -->
   <link rel="preload" href="./style/style.css" as="style">
-  <link rel="preload" href="./style/menu-cel.css" as="style">
+  <!-- <link rel="preload" href="./style/menu-cel.css" as="style"> -->
   <link rel="preload" as="image" href="./images/fondos/vue.png">
   <link rel="preload" as="image" href="./images/about.png">
 
-  <link rel="stylesheet" type="text/css" href="./style/cards.css">
   <link rel="stylesheet" type="text/css" href="./style/style.css">
-  <link rel="stylesheet" type="text/css" href="./style/menu-cel.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./style/menu-cel.css"> -->
 
   <meta name="application-name" content="nacholabraweb">
 </head>
@@ -59,14 +58,14 @@
           <p class="frase">"Conocerte a si mismo es una cualidad necesaria para volverte mejor persona, para los demás, para contigo mismo y para el éxito."</p>
         </div>
         <div class="social">
-          <div class="icon">
+          <div class="icons">
           </div>
         </div>
       </section>
     <!-- </template> -->
   </div>
   <script>
-    if('serviceWorker' in navigator) {
+    if('localhost:8080'!==location.host&&'serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
         .then(reg => console.log('service worker registered'))
         .catch(err => console.log('service worker not registered', err));

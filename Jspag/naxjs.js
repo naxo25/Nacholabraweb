@@ -91,6 +91,9 @@
 
     /* document.querySelector(".banner").style.background = 'url(./images/fondos/vue.png)'; */
     loadResource('https://fonts.googleapis.com/css?family=Poppins:300,500&amp; display=swap','link');
+    /* loadResource('https://fonts.cdnfonts.com/css/helvetica-neue-55', 'link'); */
+    /* loadResource('https://fonts.googleapis.com/css2?family=Rtica-neue-55', 'link'); */
+    /* loadResource('https://fonts.googleapisubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap', 'link'); */
   });
   
   const initialLoad = () => {

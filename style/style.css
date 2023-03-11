@@ -17,8 +17,17 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+body {
+  background: rgb(249, 250, 251);
   font-family: 'Poppins', sans-serif;
-  font-display: swap; }
+/*  font-family: -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;*/
+  font-display: swap; 
+  text-rendering: optimizeLegibility;
+/*  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;*/
+/*  font-family: Rubik;*/
+}
 
 p {
   font-weight: 300;
@@ -121,7 +130,8 @@ header .navigation li a {
 /* active */
 header.sticky {
   /*box-shadow: 1px rgba(0,0,0,.1);*/
-  background: #fff;
+/*  background: #fff;*/
+  background: rgb(249, 250, 251);
   padding: 10px 70px;
   transition: .5s; }
 
@@ -166,6 +176,7 @@ header .navigation li a:hover {
 .row .text p {
   color: black;
   text-align: justify;
+  font-weight: 400;
   width: 70%;
   margin: auto; }
 

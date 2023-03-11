@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "servor ./ index.html --reload --browse",
     "blob": "servor ./ imgToBlob.html --reload --browse",
+    "git": "brave-browser https://github.com/naxo25/Sitio-web",
     "test": "sh build/test.sh",
     "build": "sh build/build.sh"
   },

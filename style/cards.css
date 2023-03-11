@@ -36,8 +36,6 @@
     position: relative;
     width: 25em;
     height: 21em;
-    background: #51446e;
-    background: var(--i);
     /*border-radius: 20px;*/
     overflow: hidden;
     /*box-shadow: var(--shadow);*/
@@ -95,6 +93,7 @@
 }
 
 .conatainer .serviceBox:hover .content {
+    font-family: sans-serif;
     transform: scale(1.0);
     transition-delay: .25s;
     /*font-family: ;*/

@@ -1,7 +1,7 @@
 (() => {
   loadResource('./style/cards.css','link');
   portafolio.map(item => {
-    document.querySelector('#Portafolio .conatainer').innerHTML += `<div class="serviceBox" style="--i:#fff">
+    document.querySelector('#Portafolio .conatainer').innerHTML += `<div class="serviceBox">
     <div class="imgBox"'>
       <img loading="lazy" decoding="async" src="${item.img || noimg}" with='auto' height='auto'>
       <!-- <img loading="lazy" decoding="async" id="1" with='auto' height='auto'> -->

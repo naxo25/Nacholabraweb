@@ -145,7 +145,8 @@ header .navigation li a:hover {
 /* About */
 #About {
   padding-top: 0px;
-  animation: animation 1s ease; }
+  animation: animation 1s ease;
+  margin-top: 90px }
 
 @keyframes animation {
   0% {
@@ -182,14 +183,13 @@ header .navigation li a:hover {
 
 .row .col50 .imgBox {
   position: relative;
-  width: 50%;
-  min-height: 300px;
+  width: 70%;
+  min-height: 200px;
   margin: auto;
   height: 50%; }
 
 .row .col50 .imgBox img {
   position: absolute;
-  left: 3%;
   width: 100%;
   height: 100%;
   object-fit: cover; }

@@ -1,6 +1,9 @@
 /*Cards*/
 #Portafolio {
     animation: animation 3s ease;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 90px;
 }
 
 :root {
